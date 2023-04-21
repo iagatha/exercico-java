@@ -2,6 +2,10 @@ import java.util.Random;
 
 public class MatrizTransposta {
 
+    /* Fazer uma função que receba uma matriz
+     * Calcular a matriz transposta e retornar a mesma
+     */
+
     public static void main(String[] args) throws Exception {
         int [][] matriz = criaMatriz(3,4);
         imprimeMatriz(matriz);
@@ -10,6 +14,7 @@ public class MatrizTransposta {
         imprimeMatriz(transposta);
     }
 
+    // CRIA A MATRIZ
     static int [][] criaMatriz(int N, int M){
         int [][] matriz = new int [N][M];
         Random gerador = new Random();
@@ -22,6 +27,7 @@ public class MatrizTransposta {
         return matriz;
     }
 
+    // CALCULA A MATRIZ PARA SER TRANSPOSTA
     static int[][] transposta(int [][] matriz){
         int[][] matrizTransposta = new int[matriz[0].length][matriz.length];
         for(int i = 0; i < matrizTransposta.length; i++){
@@ -32,6 +38,7 @@ public class MatrizTransposta {
         return matrizTransposta;
     }
 
+    // FUNÇÂO DE IMPRIMIR A MATRIZ
     static void imprimeMatriz(int [][] matriz){
         for(int i = 0; i < matriz.length; i++){
             for(int j = 0; j < matriz[i].length; j++){
