@@ -30,6 +30,5 @@ public class ImpostoRenda {
             System.out.println("ISENTO");
         }
 
-        
     }
 }
